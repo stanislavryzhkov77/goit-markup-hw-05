@@ -21,8 +21,6 @@ p {
 
 img {
     display: block;
-    margin: 0px;
-    padding: 0px;
 }
 
 ul,
@@ -48,8 +46,10 @@ button {
 
 .container {
     max-width: 1158px;
-    padding: 0px 15px;
-    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-header {
@@ -159,11 +159,12 @@ button {
 
 .order-service {
     background: #2e2f42;
-    padding: 188px 188px;
-    margin: auto auto;
-    text-align: center;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-            url(../images/background.jpg);
+    padding: 188px 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)),
+        url(../images/background.jpg);
     max-width: 1440px;
     background-repeat: no-repeat;
     background-position: center;
@@ -405,7 +406,12 @@ button {
 }
 
 .our-portfolio-item {
+    display: block;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.our-portfolio-item:hover,
+.our-portfolio-item:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -475,6 +481,7 @@ button {
     margin-bottom: 16px;
     padding-bottom: 3px;
     padding-top: 0;
+    max-width: 264px;
 }
 
 
