@@ -6,7 +6,8 @@
         <title>WEBSTUDIO</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@400;500;700&display=swap"
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
             rel="stylesheet" />
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
@@ -436,7 +437,7 @@
             </div>
         </footer>
         <!-- ============== BACKDROP ============== -->  
-        <div class="modal-overlay is-open">
+        <div class="backdrop" data-modal>
             <div class="modal">
                 <button class="btn-close" type="button">
                     <svg class="btn-icon-close" width="8" height="8">
@@ -445,7 +446,6 @@
                 </button>
                 <p class="modal-text">Leave your contacts and we will call you back</p>
                 <form class="modal-form">
-                    <!-- ============== 1 ============== -->
                     <div class="modal-form-wrapper">
                         <label for="user-name" class="review-form"> Name </label>
                         <div class="modal-form-input-wrapper">
@@ -456,7 +456,6 @@
                             </svg>
                         </div>
                     </div>
-                    <!-- ============== 2 ============== -->
                     <div class="modal-form-wrapper">
                         <label for="phone" class="review-form"> Phone </label>
                         <div class="modal-form-input-wrapper">
@@ -467,7 +466,6 @@
                             </svg>
                         </div>
                     </div>
-                    <!-- ============== 3 ============== -->
                     <div class="modal-form-wrapper">
                         <label for="email" class="review-form"> Email </label>
                         <div class="modal-form-input-wrapper">
@@ -477,13 +475,11 @@
                             </svg>
                         </div>
                     </div>
-                    <!-- ============== 4 ============== -->
                     <div class="modal-form-user-comment">
                         <label for="user-comment" class="review-form"> Comment </label>
                         <textarea name="user-comment" id="user-comment" placeholder="Text input"
                             class="review-form-input-comment"></textarea>
                     </div>
-                    <!-- ============== 5 ============== -->
                     <div class="checkbox">
                         <input type="checkbox" id="user-privacy" class="review-form-checkbox visually-hidden" value="true"
                             name="user-privacy" required />
@@ -497,7 +493,6 @@
                             <a href="" class="privacy-policy-link">Privacy Policy</a>
                         </label>
                     </div>
-                    <!-- ============== 6 ============== -->
                     <button type="submit" class="btn-send">Send</button>
                 </form>
             </div>
