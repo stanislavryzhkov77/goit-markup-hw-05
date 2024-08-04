@@ -17,12 +17,12 @@ h6 {
 
 p {
     margin: 0;
-    padding-left: 0;
-    list-style-type: none;
 } 
 
 img {
     display: block;
+    margin: 0px;
+    padding: 0px;
 }
 
 ul,
@@ -48,10 +48,8 @@ button {
 
 .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 0px 15px;
+    margin: 0 auto;
 }
 
 .container-header {
@@ -82,8 +80,6 @@ button {
                 0 1px 1px 0 rgba(46, 47, 66, 0.16), 
                 0 2px 1px 0 rgba(46, 47, 66, 0.08);
     border-bottom: 1px solid #e7e9fc;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .logo-color {
@@ -100,10 +96,6 @@ button {
     display: block;
     position: relative;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.link-studio {
-    
 }
 
 .menu {
@@ -167,7 +159,9 @@ button {
 
 .order-service {
     background: #2e2f42;
-    padding: 188px 0;
+    padding: 188px 188px;
+    margin: auto auto;
+    text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url(../images/background.jpg);
     max-width: 1440px;
