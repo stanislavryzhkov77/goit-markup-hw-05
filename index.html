@@ -435,7 +435,7 @@
             </div>
         </footer>
         <!-- ============== BACKDROP ============== -->  
-        <div class="backdrop" data-modal>
+        <div class="backdrop is-open">
             <div class="modal">
                 <button class="btn-close" type="button">
                     <svg class="btn-icon-close" width="8" height="8">
@@ -474,13 +474,22 @@
                         </div>
                     </div>
                     <div class="modal-form-user-comment">
-                        <label for="user-comment" class="review-form"> Comment </label>
-                        <textarea name="user-comment" id="user-comment" placeholder="Text input"
-                            class="review-form-input-comment"></textarea>
+                        <label for="user-comment" class="review-form">Comment</label>
+                        <textarea 
+                            name="user-comment" 
+                            id="user-comment" 
+                            placeholder="Text input"
+                            class="review-form-input-comment">
+                        </textarea>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox" id="user-privacy" class="review-form-checkbox visually-hidden" value="true"
-                            name="user-privacy" required />
+                        <input  
+                            type="checkbox" 
+                            id="user-privacy" 
+                            class="review-form-checkbox visually-hidden" 
+                            value="true"
+                            name="user-privacy" 
+                            required />
                         <label for="user-privacy" class="privacy-policy">
                             <span class="review-form-own-checkbox">
                                 <svg class="review-form-own-checkbox-icon" width="10" height="8">
