@@ -702,7 +702,8 @@ button {
     outline: transparent;
 }
 
-.review-form-icon:focus {
+.modal-form-wrapper:focus,
+.modal-form-wrapper:hover {
     fill: #4D5AE5;
 }
 
@@ -715,7 +716,9 @@ button {
 }
 
 .review-form-input:focus,
-.review-form-input-comment:focus {
+.review-form-input:hover,
+.review-form-input-comment:focus,
+.review-form-input-comment:hover {
     border-color: #4D5AE5;
 }
 
@@ -746,6 +749,21 @@ button {
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
  .checkbox .privacy-policy-link {
     line-height: 1.3;
     text-decoration: underline;
@@ -772,6 +790,12 @@ button {
     align-items: center;
     justify-content: center;
     fill: transparent;
+}
+
+.input[type="checkbox"]:checked {
+    background-color: #404bbf;
+    border: none;
+    fill: #F4F4FD;
 }
 
 .privacy-policy-link {
